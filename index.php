@@ -16,7 +16,7 @@
 <header>
     <div>
         <a href = "index.php">
-            <h1>Blog de Videojuegos</h1>
+            Blog de Videojuegos
         
         </a>
 
