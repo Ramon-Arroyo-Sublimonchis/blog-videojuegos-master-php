@@ -6,6 +6,7 @@
 
     <meta charset = "utf-8"/>
     <title>Blog de Videojuegos</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/estilos.css"/>
 
 
 </head>
@@ -13,7 +14,7 @@
 
 <body>
 
-<header id="header">
+<header id="cabecera">
     <div>
 
         <!--LOGO -->
@@ -27,7 +28,7 @@
 
     <!-- MENU -->
 
-    <nav id="nav">
+    <nav id="menu">
     
         <ul>
             <li>
@@ -65,8 +66,108 @@
 </header>
 
 
+    
+
+    <div id = "contenedor">
     <!--BARRA LATERAL -->
-    <!--CAJA PRINCIPAL-->
+
+        <aside id = "sidebar">
+            <div id="login" class="bloque">
+            
+                <h3>Identificate</h3>
+                
+                    <form action="login.php" method = "POST" >
+                    
+                    <label for = "email">Email</label>
+                    <input type="email" name="email"/>
+
+                    <label for ="password">Contrasena</label>
+                    <input type="password" name="password"/>
+
+                    <input type="submit" value ="Entrar"/>
+
+
+
+                    </form>
+
+
+            </div>  
+
+
+            <div id="register" class="bloque">
+            
+                <h3>Registrate</h3>
+                
+                    <form action="registro.php" method = "POST" >
+                    
+                    <label for = "nombre">Nombre</label>
+                    <input type="text" name="nombre"/>
+                    
+                    <label for = "apellidos">Apellidos</label>
+                    <input type="text" name="apellidos"/>
+
+                    <label for = "email">Email</label>
+                    <input type="email" name="email"/>
+
+                    <label for ="password">Contrasena</label>
+                    <input type="password" name="password"/>
+
+                    <input type="submit" value ="Entrar"/>
+
+
+
+                    </form>
+
+
+            </div>  
+        
+        
+        </aside>
+        <!--CAJA PRINCIPAL-->
+
+        <div id ="principal">
+
+            <h1>Ultimas Entradas</h1>
+            
+            <article class="entradas">
+            <h2>Titulo de Mi Entrada</h2>
+            <p>Los mejores video juegos de la historia de los 90 en la
+            actualidoad 2019 </p>
+            
+            </article>
+
+            <article class="entradas">
+            <h2>Titulo de Mi Entrada</h2>
+            <p>Los mejores video juegos de la historia de los 90 en la
+            actualidoad 2019 </p>
+            
+            </article>
+
+            <article class="entradas">
+            <h2>Titulo de Mi Entrada</h2>
+            <p>Los mejores video juegos de la historia de los 90 en la
+            actualidoad 2019 </p>
+            
+            </article>
+
+
+            
+        
+        
+        </div>
+    
+    
+    </div>
+
+    <footer id="pie">
+    <p>Desarrollado por Ramon Arroyo Sublimonchis &copy 2019 </p>
+    
+    </footer>
+
+
+
+
+    
 
 </body>
 
