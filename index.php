@@ -15,10 +15,10 @@
 <body>
 
 <header id="cabecera">
-    <div>
+    <div id="logo">
 
         <!--LOGO -->
-        <a href = "index.php">
+        <a  href = "index.php">
             Blog de Videojuegos
         
         </a>
