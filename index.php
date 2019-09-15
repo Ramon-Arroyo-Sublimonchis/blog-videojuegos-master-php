@@ -65,7 +65,7 @@
 
 </header>
 
-
+    <div class="clearfix"></div>
     
 
     <div id = "contenedor">
