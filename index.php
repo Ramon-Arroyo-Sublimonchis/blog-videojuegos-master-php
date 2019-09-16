@@ -130,31 +130,36 @@
             <h1>Ultimas Entradas</h1>
             
             <article class="entradas">
-            <h2>Titulo de Mi Entrada</h2>
+            <a href="#"><h2>Titulo de Mi Entrada</h2></a>
+            
+            <p>Los mejores video juegos de la historia de los 90 en la
+            actualidoad 2019 </p>
+            </article>
+
+            <article class="entradas">
+            <a href="#"><h2>Titulo de Mi Entrada</h2></a>
             <p>Los mejores video juegos de la historia de los 90 en la
             actualidoad 2019 </p>
             
             </article>
 
             <article class="entradas">
-            <h2>Titulo de Mi Entrada</h2>
+            <a href="#"><h2>Titulo de Mi Entrada</h2></a>
             <p>Los mejores video juegos de la historia de los 90 en la
             actualidoad 2019 </p>
             
             </article>
 
-            <article class="entradas">
-            <h2>Titulo de Mi Entrada</h2>
-            <p>Los mejores video juegos de la historia de los 90 en la
-            actualidoad 2019 </p>
-            
-            </article>
-
-
-            
-        
-        
+            <div id="ver-todas">
+            <a href="">Ver todas las Entradas </a>
         </div>
+            
+        </div> <!--FIN DIV PRINCIPAL-->
+
+        
+
+
+        <div class="clearfix"></div>
     
     
     </div>
