@@ -39,26 +39,7 @@
             
         </div> <!--FIN DIV PRINCIPAL-->
 
-<<<<<<< HEAD
-<html lang="es">
 
-<head>
-
-    <meta charset = "utf-8"/>
-    <title>Blog de Videojuegos</title>
-
-
-</head>
-
-
-<body>
-
-<header>
-    <div>
-        <a href = "index.php">
-            Blog de Videojuegos
-=======
->>>>>>> menu_navegacion
         
 
 
