@@ -39,7 +39,7 @@
                     <label for ="password">Contrasena</label>
                     <input type="password" name="password"/>
 
-                    <input type="submit" value ="Entrar"/>
+                    <input type="submit" name="submit" value ="Entrar"/>
 
 
 
