@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 if(isset($_POST)){
     //Recoger los valores del Formulario de Registro
     $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : false;
@@ -59,7 +61,12 @@ $guardar_usuario = false;
 if( count($errores) == 0 ){
     $guardar_usuario = true;
     //INSERTAR USUARION EN LA BASE DE DATOS
-} 
+} else {
+
+    $_SESSION['errores'] = $errores;
+    header('Location: index.php');
+
+}
 
 
 
