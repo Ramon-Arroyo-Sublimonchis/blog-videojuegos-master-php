@@ -1,8 +1,15 @@
 <?php
-
-session_start();
+    
 
 if(isset($_POST)){
+
+    //Conexion a la Base de Datos
+    require_once 'includes/conexion.php';
+
+    session_start();
+
+
+
     //Recoger los valores del Formulario de Registro
     $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : false;
     $apellidos = isset($_POST['apellidos']) ? $_POST['apellidos'] : false;
@@ -60,15 +67,28 @@ $guardar_usuario = false;
 
 if( count($errores) == 0 ){
     $guardar_usuario = true;
+    
+    //Cifrar la Contrasena
+    $password_segura = password_hash($password, PASSWORD_BCRYPT, ['cost'=> 4]);
+
     //INSERTAR USUARION EN LA BASE DE DATOS
+    $sql = "INSERT INTO usuarios  VALUES(null, '$nombre', '$apellidos', '$email', '$password_segura', CURDATE())";
+    $guardar = mysqli_query( $db, $sql );
+
+   
+
+    if($guardar){
+        $_SESSION['completado'] = "El Registro se ha completado con Exito";
+    }
+
+
 } else {
 
-    $_SESSION['errores'] = $errores;
-    header('Location: index.php');
+    $_SESSION['errores']['general'] = "Fallo al Guardar el Usuario"; 
 
 }
 
 
-
+header('Location: index.php');
 
 ?>
