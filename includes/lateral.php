@@ -1,13 +1,37 @@
-<?php   
-require_once 'includes/helpers.php';
-
-?>
 
 
 <aside id = "sidebar">
+
+    <?php if(isset($_SESSION['usuario'])): ?>
+            <div id="usuario-logueado" class ="bloque">
+
+            <h3>Bienvenido <?= $_SESSION['usuario']['nombre'].' '.$_SESSION['usuario']['apellidos'];     ?>  </h3>
+            
+            <a href="cerrar.php" class="boton boton-verde">Crear Entradas</a>
+            <a href="cerrar.php" class="boton">Crear Categorias</a>
+            <a href="cerrar.php" class="boton boton-naranja">Mis Datos</a>
+            <a href="cerrar.php" class="boton boton-rojo">Cerrar Sesion </a>
+            </div>
+
+
+
+<?php endif;  ?>
+
+
             <div id="login" class="bloque">
             
                 <h3>Identificate</h3>
+
+                <?php if(isset($_SESSION['error_login'])): ?>
+            <div class="alerta alerta-error">
+
+             <?= $_SESSION['error_login']  ?> 
+            <!--BOTONES -->
+
+           
+            </div>
+
+            <?php endif;  ?>
                 
                     <form action="login.php" method = "POST" >
                     
@@ -42,7 +66,7 @@ require_once 'includes/helpers.php';
                     
                     
                     <?php elseif(isset($_SESSION['errores']['general'])): ?>
-                    <div class="alerta alerta-exito">
+                    <div class="alerta alerta-error">
                         <?= $_SESSION['errores']['general']  ?>
                     </div>
 

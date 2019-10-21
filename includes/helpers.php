@@ -30,4 +30,10 @@ function mostrarError($errores, $campo){
         return $borrado;
     }
 
+
+    function conseguirCategorias(){
+        $sql = "SELECT * FROM categorias ORDER BY id ASC;";
+        mysqli_query($db , $sql);
+    }
+
 ?>
