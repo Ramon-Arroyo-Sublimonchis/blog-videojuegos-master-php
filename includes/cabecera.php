@@ -1,4 +1,4 @@
-<?php require_once 'includes/conexion.php' ?>
+<?php require_once 'conexion.php'; ?>
 <?php require_once 'includes/helpers.php'; ?>
 
 
@@ -49,11 +49,11 @@
             ?>
 
                 <li>
-                    <a href="categoria.php?id=<?=$categoria['id']?>"> <?= $categoria['nombre']   ?> </a> 
+                    <a href="categoria.php?id=<?=$categoria['id']?>"> <?=$categoria['nombre']   ?> </a> 
                 </li>
             
             <?php endwhile; ?>
-           
+           <li>
                 <a href="#">Sobre Mi </a>
             </li>
             <li>

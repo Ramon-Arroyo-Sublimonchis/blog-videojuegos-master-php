@@ -37,11 +37,11 @@ function mostrarError($errores, $campo){
 
         $result = array();
 
-        if($categorias && mysqli_num_rows($categorias) <= 1 ){
+        if($categorias && mysqli_num_rows($categorias) >= 1 ){
             $result = $categorias;
         }
 
-
+        return $result;
     }
 
 ?>
