@@ -1,5 +1,7 @@
 
 
+<!--BARRA LATERAL-->
+
 <aside id = "sidebar">
 
     <?php if(isset($_SESSION['usuario'])): ?>
